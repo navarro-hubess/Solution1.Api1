@@ -14,9 +14,10 @@ namespace Services
         //    _taxaJuros = taxaJuros;
         //}
 
-        public static async Task<decimal> RetornaTaxaJuros()
+        public async Task<TaxaJuros> RetornaTaxaJuros()
         {
-            return TaxaJuros.TaxaDeJuros;
+            TaxaJuros tx = new TaxaJuros { TaxaDeJuros = 0.01M };
+            return tx;
         }
     }
 }
