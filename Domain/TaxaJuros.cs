@@ -4,6 +4,6 @@ namespace Domain
 {
     public class TaxaJuros
     {
-        public decimal TaxaDeJuros { get; set; } 
+        public static decimal TaxaDeJuros { get; set; } = 0.01M;
     }
 }

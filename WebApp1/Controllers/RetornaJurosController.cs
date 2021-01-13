@@ -29,9 +29,8 @@ namespace WebApp1.Controllers
         [Route("taxaJuros")]
         public async Task<IActionResult> GetJuros()
         {
-            TaxaJurosService taxaJurosService = new TaxaJurosService();
-            var txJuros = await taxaJurosService.RetornaTaxaJuros();
-            return new JsonResult(txJuros);
+            var txJuros = await TaxaJurosService.RetornaTaxaJuros();
+            return Json(txJuros);
         }
     }
 }
