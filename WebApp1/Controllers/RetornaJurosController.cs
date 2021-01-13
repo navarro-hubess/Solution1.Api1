@@ -12,19 +12,11 @@ namespace WebApp1.Controllers
     [Route("[controller]")]
     public class RetornaJurosController : Controller
     {
-
-        //private readonly TaxaJurosService _taxaJurosService;
-
-        //public RetornaJurosController(TaxaJurosService taxaJurosService)
-        //{
-        //    _taxaJurosService = taxaJurosService;
-        //}
-
         /// <summary>
         /// GET: RetornaJuros diretamente de 0.01
         /// http://localhost:62372/RetornaJuros/taxaJuros
         /// </summary>
-        /// <returns></returns>
+        /// <returns>(decimal) fixed 0.01</returns>
         [HttpGet]
         [Route("taxaJuros")]
         public async Task<IActionResult> GetJuros()
